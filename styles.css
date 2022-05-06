@@ -6,6 +6,7 @@
 
 :root {
 	--red-primary: #ca2020;
+	--orange-primary: #ff0;
 }
 
 body {
@@ -38,6 +39,10 @@ h1 {
 	font-size: 1.2em;
 }
 
+label {
+	font-size: .6em;
+}
+
 .model {
 	text-align: center;
 	color: var(--red-primary);
@@ -47,6 +52,7 @@ h1 {
 
 .div-container {
 	padding: .5em 0;
+	text-align: center;
 }
 
 .btn {
@@ -62,11 +68,36 @@ h1 {
 	/* color: #333; */
 	background-color: #777;
 	color: #fff;
+	width: 100%;
 }
 
 .btn:hover {
 	cursor: pointer;
 }
+
+.up-buttons {
+	padding: .7em 1em;
+	border-radius: 10px;
+	width: 100%;
+	/* margin: auto; */
+}
+
+.btn-replay {
+	border-radius: 50%;
+	/* padding: 0; */
+	width: 70px;
+	height: 60px;
+	font-size: .6em;
+	position: absolute;
+	left: 50%;
+	top: 15px;
+	transform: translate(-50%, 0%);
+}
+
+/* .basic-btns {
+	width: 45px;
+	height: 45px;
+} */
 
 #display {
 	width: 100%;
@@ -82,10 +113,34 @@ h1 {
 	outline: none;
 }
 
+.actions-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+}
+
 .actions {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
 	gap: 5px;
+	position: relative;
+}
+
+#shift {
+	grid-column: 1 / 2;
+}
+
+#alpha {
+	grid-column: 2 / 3;
+}
+
+#mode {
+	grid-column: 4 / 5;
+}
+
+#on {
+	grid-column: 5 / 6;
 }
 
 .advanceds-op {
@@ -97,7 +152,12 @@ h1 {
 .basics-op {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	gap: 5px;
+	gap: 0 5px;
+}
+
+.basics-op-div {
+	height: 12px;
+	font-size: .6em;
 }
 
 .advanced-btn {
@@ -112,4 +172,16 @@ h1 {
 .btn-red {
 	background-color: var(--red-primary);
 	color: #eee;
+}
+
+.red {
+	color: var(--red-primary);
+}
+
+.orange {
+	color: var(--orange-primary);
+}
+
+.gray {
+	color: #aaa;
 }

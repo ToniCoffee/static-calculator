@@ -20,11 +20,23 @@
 			<input type="text" id="display">
 		</div>
 		<div class="div-container actions">
-			<button class="up-buttons btn">SHIFT</button>
-			<button class="up-buttons btn">ALPHA</button>
-			<button class="up-buttons btn">REPLAY</button>
-			<button class="up-buttons btn">MODE</button>
-			<button class="up-buttons btn">ON</button>
+			<div class="actions-container" id="shift">
+				<label class="orange">SHIFT</label>
+				<button class="up-buttons btn"></button>
+			</div>
+			<div class="actions-container" id="alpha">
+				<label class="red">ALPHA</label>
+				<button class="up-buttons btn"></button>
+			</div>
+			<button class="up-buttons btn btn-replay">REPLAY</button>
+			<div class="actions-container" id="mode">
+				<label class="gray">MODE&nbsp;<span class="orange">CLR</span></label>
+				<button class="up-buttons btn"></button>
+			</div>
+			<div class="actions-container" id="on">
+				<label class="gray">ON</label>
+				<button class="up-buttons btn"></button>
+			</div>
 		</div>
 		<div class="div-container advanceds-op">
 			<button class="advanced-btn btn">x<sup>-1</sup></button>
@@ -53,28 +65,88 @@
 			<button class="advanced-btn btn">M+</button>
 		</div>
 		<div class="div-container basics-op">
-			<button class="basic-btns btn">7</button>
-			<button class="basic-btns btn">8</button>
-			<button class="basic-btns btn">9</button>
-			<button class="basic-btns btn btn-red">DEL</button>
-			<button class="basic-btns btn btn-red">AC</button>
-			<button class="basic-btns btn">4</button>
-			<button class="basic-btns btn">5</button>
-			<button class="basic-btns btn">6</button>
-			<button class="basic-btns btn">x</button>
-			<button class="basic-btns btn">/</button>
-			<button class="basic-btns btn">1</button>
-			<button class="basic-btns btn">2</button>
-			<button class="basic-btns btn">3</button>
-			<button class="basic-btns btn">+</button>
-			<button class="basic-btns btn">-</button>
-			<button class="basic-btns btn">0</button>
-			<button class="basic-btns btn">.</button>
-			<button class="basic-btns btn">EXP</button>
-			<button class="basic-btns btn">Ans</button>
-			<button class="basic-btns btn">
-				=
-			</button>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">7</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">8</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">9</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">INS</div>
+				<button class="basic-btns btn btn-red">DEL</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">OFF</div>
+				<button class="basic-btns btn btn-red">AC</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">4</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">5</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">6</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">x</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">/</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">S-SUM</div>
+				<button class="basic-btns btn">1</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">S-VAR</div>
+				<button class="basic-btns btn">2</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">3</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">+</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange"></div>
+				<button class="basic-btns btn">-</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">Rnd</div>
+				<button class="basic-btns btn">0</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">Ran#</div>
+				<button class="basic-btns btn">.</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">PI</div>
+				<button class="basic-btns btn">EXP</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">DRG&gt;</div>
+				<button class="basic-btns btn">Ans</button>
+			</div>
+			<div>
+				<div class="basics-op-div orange">%</div>
+				<button class="basic-btns btn">
+					=
+				</button>
+			</div>
 		</div>
 	</div>
 </body>
