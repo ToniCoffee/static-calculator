@@ -23,7 +23,6 @@ body {
 	border-radius: 7px;
 	width: 280px;
 	padding: .5em 1em 1em 1em;
-	/* box-shadow: 10px 10px 0px #777; */
 	box-shadow: 3px 3px 3px #777;
 }
 
@@ -57,15 +56,12 @@ label {
 
 .btn {
 	padding: .5em;
-	/* font-size: 11px; */
-	/* font-size: 13px; */
 	font-size: min(11px, 1em);
 	font-weight: 550;
 	border: none;
 	border-radius: 3px;
 	box-shadow: 0px 0px 5px #222;
 	border: 1px solid #000;
-	/* color: #333; */
 	background-color: #777;
 	color: #fff;
 	width: 100%;
@@ -79,12 +75,10 @@ label {
 	padding: .7em 1em;
 	border-radius: 10px;
 	width: 100%;
-	/* margin: auto; */
 }
 
 .btn-replay {
 	border-radius: 50%;
-	/* padding: 0; */
 	width: 70px;
 	height: 60px;
 	font-size: .6em;
@@ -94,19 +88,27 @@ label {
 	transform: translate(-50%, 0%);
 }
 
-/* .basic-btns {
-	width: 45px;
-	height: 45px;
-} */
-
-#display {
+#display-result {
 	width: 100%;
-	padding: .5em;
-	/* border-radius: 7px; */
+	height: 30px;
+	padding: .25em .5em;
 	background-color: #555;
+	border-right: 2px solid #777;
+	border-left: 2px solid #222;
+	border-bottom: 2px solid #777;
 	color: #aaa;
 	font-weight: bold;
 	text-align: right;
+}
+
+#display-action {
+	width: 100%;
+	padding: .5em;
+	background-color: #555;
+	border-bottom: none;
+	color: #aaa;
+	font-weight: bold;
+	text-align: left;
 }
 
 #display:focus {
@@ -127,19 +129,19 @@ label {
 	position: relative;
 }
 
-#shift {
+#shift-container {
 	grid-column: 1 / 2;
 }
 
-#alpha {
+#alpha-container {
 	grid-column: 2 / 3;
 }
 
-#mode {
+#mode-container {
 	grid-column: 4 / 5;
 }
 
-#on {
+#on-container {
 	grid-column: 5 / 6;
 }
 
@@ -162,8 +164,6 @@ label {
 
 .advanced-btn {
 	background-color: #111;
-	/* border-right: 1px solid #aaa;
-	border-bottom: 1px solid #aaa; */
 	box-shadow: 0px 0px 5px #000;
 	border: 1px solid #000;
 	color: #aaa;
