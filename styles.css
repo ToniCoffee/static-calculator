@@ -5,8 +5,17 @@
 }
 
 :root {
+	--black: #000;
+	--white: #fff;
+	--white-primary: #eee;
 	--red-primary: #ca2020;
 	--orange-primary: #ff0;
+	--gray-primary: #777;
+	--black-primary: #222;
+	--gray-secondary: #aaa;
+	--black-secondary: #111;
+	--gray-terciary: #555;
+	--background-wrapper: #333;
 }
 
 body {
@@ -19,18 +28,18 @@ body {
 }
 
 .wrapper {
-	background-color: #333;
+	background-color: var(--background-wrapper);
 	border-radius: 7px;
 	width: 280px;
 	padding: .5em 1em 1em 1em;
-	box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px var(--gray-primary);
 }
 
 header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	color: #aaa;
+	color: var(--gray-secondary);
 	font-weight: bold;
 }
 
@@ -60,10 +69,10 @@ label {
 	font-weight: 550;
 	border: none;
 	border-radius: 3px;
-	box-shadow: 0px 0px 5px #222;
-	border: 1px solid #000;
-	background-color: #777;
-	color: #fff;
+	box-shadow: 0px 0px 5px var(--black-primary);
+	border: 1px solid var(--black);
+	background-color: var(--gray-primary);
+	color: var(--white);
 	width: 100%;
 }
 
@@ -92,11 +101,11 @@ label {
 	width: 100%;
 	height: 30px;
 	padding: .25em .5em;
-	background-color: #555;
-	border-right: 2px solid #777;
-	border-left: 2px solid #222;
-	border-bottom: 2px solid #777;
-	color: #aaa;
+	background-color: var(--gray-terciary);
+	border-right: 2px solid var(--gray-primary);
+	border-left: 2px solid var(--black-primary);
+	border-bottom: 2px solid var(--gray-primary);
+	color: var(--gray-secondary);
 	font-weight: bold;
 	text-align: right;
 }
@@ -104,9 +113,9 @@ label {
 #display-action {
 	width: 100%;
 	padding: .5em;
-	background-color: #555;
+	background-color: var(--gray-terciary);
 	border-bottom: none;
-	color: #aaa;
+	color: var(--gray-secondary);
 	font-weight: bold;
 	text-align: left;
 }
@@ -163,15 +172,15 @@ label {
 }
 
 .advanced-btn {
-	background-color: #111;
-	box-shadow: 0px 0px 5px #000;
-	border: 1px solid #000;
-	color: #aaa;
+	background-color: var(--black-secondary);
+	box-shadow: 0px 0px 5px var(--black);
+	border: 1px solid var(--black);
+	color: var(--gray-secondary);
 }
 
 .btn-red {
 	background-color: var(--red-primary);
-	color: #eee;
+	color: var(--white-primary);
 }
 
 .red {
@@ -183,5 +192,5 @@ label {
 }
 
 .gray {
-	color: #aaa;
+	color: var(--gray-secondary);
 }
